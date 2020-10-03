@@ -2,5 +2,8 @@
   "files.exclude": {
     "**/node_modules/": true,
     "**/dist": true
-  }
+  },
+  "eslint.alwaysShowStatus": true,
+  "formatter-pug.omitDiv": true,
+  "markdown-preview-enhanced.codeBlockTheme": "github.css"
 }

@@ -1,0 +1,18 @@
+{
+  "npmClient": "npm",
+  "packages": [
+    "packages/*"
+  ],
+  "command": {
+    "bootstrap": {
+      "hoist": true
+    },
+    "publish": {
+      "conventionalCommits": true
+    },
+    "version": {
+      "message": "chore(release): release"
+    }
+  },
+  "version": "independent"
+}
