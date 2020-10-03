@@ -4,6 +4,9 @@
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](code_of_conduct.md)
 
+Streamhue allows livestreamers on channels such as Twitch, YouTube and others, to have interactions with their smartlight systems, to react to donations, subscriptions amongst many other events.\
+The project is currently heavily under development and should not be considered usable in any way, shape or form.
+
 ## Getting started
 `npm i` to install
 
