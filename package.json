@@ -1,0 +1,73 @@
+{
+  "name": "streamhue",
+  "description": "An application for syncing events from live streaming and smart lights.",
+  "license": "AGPL-3.0-or-later",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/streamhue/streamhue.git"
+  },
+  "private": true,
+  "author": {
+    "name": "Nicholai Nissen",
+    "email": "nicholainissen@gmail.com",
+    "url": "https://nicholai.dev"
+  },
+  "contributors": [
+    {
+      "name": "Nicolaj Gajhede",
+      "email": "ngajhede@gmail.com",
+      "url": "https://nicolaj.dev"
+    }
+  ],
+  "scripts": {
+    "ct": "git-cz",
+    "bootstrap": "npm install lerna && lerna bootstrap && npm install",
+    "reset": "npm run cleanup && rimraf -rf node_modules && npm run bootstrap",
+    "test": "lerna run test",
+    "build": "npm run cleanup && lerna run compile",
+    "build:watch": "npm run cleanup && lerna run compile:watch --stream --no-sort",
+    "cleanup": "lerna run cleanup --stream --parallel",
+    "lint": "lerna run lint",
+    "publish": "lerna publish --force-publish=* --skip-npm --skip-git",
+    "prepublish": "npm run build",
+    "commitmsg": "commitlint -e $GIT_PARAMS",
+    "release": "lerna publish --conventional-commits --skip-git --skip-npm"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
+    "@types/jest": "^26.0.14",
+    "@types/node": "^14.11.2",
+    "@types/node-fetch": "^2.5.7",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^7.10.0",
+    "husky": "^4.3.0",
+    "jest": "^26.4.2",
+    "lerna": "^3.22.1",
+    "node-fetch": "^2.6.1",
+    "rimraf": "^3.0.2",
+    "ts-jest": "^26.4.1",
+    "tsc-watch": "^4.2.9",
+    "typescript": "^4.0.2"
+  },
+  "dependencies": {
+    "@curveball/accesslog": "^0.2.0",
+    "@curveball/bodyparser": "^0.4.6",
+    "@curveball/controller": "^0.3.0",
+    "@curveball/core": "^0.14.2",
+    "@curveball/cors": "0.0.1",
+    "@curveball/http-errors": "^0.3.0",
+    "@curveball/problem": "^0.2.2",
+    "@curveball/router": "^0.2.4"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  }
+}

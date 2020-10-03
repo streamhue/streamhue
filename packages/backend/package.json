@@ -1,0 +1,17 @@
+{
+  "name": "@streamhue/backend",
+  "version": "0.1.0",
+  "description": "Backend server for Streamhue",
+  "private" : true,
+  "author": {
+    "name": "Nicholai Nissen",
+    "email": "nicholainissen@gmail.com",
+    "url": "https://nicholai.dev"
+  },
+  "homepage": "",
+  "license": "AGPL-3.0-or-later",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  }
+}
