@@ -3,6 +3,7 @@
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](code_of_conduct.md)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fstreamhue%2Fstreamhue.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fstreamhue%2Fstreamhue?ref=badge_shield)
 
 Streamhue allows livestreamers on channels such as Twitch, YouTube and others, to have interactions with their smartlight systems, to react to donations, subscriptions amongst many other events.\
 The project is currently heavily under development and should not be considered usable in any way, shape or form.
@@ -45,3 +46,6 @@ GNU Affero General Public License for more details.
 You should have received a copy of the GNU Affero General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ```
+
+
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fstreamhue%2Fstreamhue.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fstreamhue%2Fstreamhue?ref=badge_large)
