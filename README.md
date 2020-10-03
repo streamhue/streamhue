@@ -23,6 +23,7 @@ Used to configure user and service.
 General project website
 
 ## Contributing
+Please see [CONTRIBUTING.md](CONTRIBUTING.md)
 
 ## License
 ```
