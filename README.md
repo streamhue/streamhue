@@ -1,6 +1,8 @@
 # Streamhue
 [![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lerna.js.org/)
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](code_of_conduct.md)
 
 ## Getting started
 `npm i` to install
@@ -19,6 +21,8 @@ Client background service. Integrates with different streaming providers and sma
 Used to configure user and service.
 ### Web
 General project website
+
+## Contributing
 
 ## License
 ```
