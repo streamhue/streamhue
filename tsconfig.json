@@ -1,0 +1,14 @@
+{
+  "extends": "./tsconfig.build.json",
+
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@streamhue/*": [ "packages/*/src" ]
+    },
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "noImplicitAny": true,
+    "types": ["jest"]
+  }
+}
