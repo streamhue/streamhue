@@ -1,0 +1,40 @@
+---
+# Add 'meta' label to any root file changes
+meta:
+  - ./*
+
+# Package related labels
+ui:
+  - packages/ui/*
+  - packages/ui/**/*
+
+common:
+  - packages/common/*
+  - packages/common/**/*
+
+web:
+  - packages/web/*
+  - packages/web/**/*
+
+auth:
+  - packages/auth/*
+  - packages/auth/**/*
+
+backend:
+  - packages/backend/*
+  - packages/backend/**/*
+
+service:
+  - packages/ui/*
+  - packages/ui/**/*
+
+# Add 'test' label to any change to tests
+test:
+  - packages/**/tests/*
+  - packages/**/tests/**/*
+
+# Add 'source' label to any change to src files within the source dir EXCEPT for the docs sub-folder
+source:
+  - 'packages/**/src/*'
+  - 'packages/**/src/**/*'
+
