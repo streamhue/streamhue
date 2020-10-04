@@ -1,0 +1,38 @@
+{
+  "folders": [{
+    "name": "Root",
+    "path": "."
+}, {
+    "name": "Authentication",
+    "path": "packages/auth"
+  }, {
+    "name": "Backend",
+    "path": "packages/backend"
+  }, {
+    "name": "Common",
+    "path": "packages/common"
+  }, {
+    "name": "Service",
+    "path": "packages/service"
+  }, {
+    "name": "UI",
+    "path": "packages/ui"
+  }, {
+    "name": "Website",
+    "path": "packages/web"
+  }],
+  "settings": {
+    "files.exclude": {
+      "**/node_modules/": true,
+      "**/dist": true,
+      "**/coverage": true,
+      "**/package-lock.json": true
+    },
+    "eslint.alwaysShowStatus": true,
+    "formatter-pug.omitDiv": true,
+    "markdown-preview-enhanced.codeBlockTheme": "github.css",
+    /* Re-enable these when it becomes ready for JEST */
+    "jest.disabledWorkspaceFolders": ["Root", "Website", "UI", "Service", "Backend"],
+    "jest.pathToJest": "npm run test --"
+  }
+}
