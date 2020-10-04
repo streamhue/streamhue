@@ -20,6 +20,9 @@
   }, {
     "name": "Website",
     "path": "packages/web"
+  }, {
+    "name": "Extension Pack",
+    "path": "packages/extension-pack"
   }],
   "settings": {
     "files.exclude": {
@@ -32,7 +35,7 @@
     "formatter-pug.omitDiv": true,
     "markdown-preview-enhanced.codeBlockTheme": "github.css",
     /* Re-enable these when it becomes ready for JEST */
-    "jest.disabledWorkspaceFolders": ["Root", "Website", "UI", "Service", "Backend"],
+    "jest.disabledWorkspaceFolders": ["Root", "Website", "UI", "Service", "Backend", "Extension Pack"],
     "jest.pathToJest": "npm run test --"
   }
 }
