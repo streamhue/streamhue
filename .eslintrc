@@ -1,0 +1,18 @@
+{
+  "root": true,
+  "parserOptions": {
+    "ecmaVersion": 2019
+  },
+
+  "env": {
+    "es6": true
+  },
+  "overrides": [
+    {
+      "files": ["./package.json"],
+      "rules": {
+        "import/no-extraneous-dependencies": "off"
+      }
+    }
+  ]
+}
