@@ -1,16 +1,44 @@
 {
   "name": "@streamhue/common",
   "version": "0.1.0",
+  "type": "module",
   "description": "Common code for Streamhue packages",
   "author": {
     "name": "Nicholai Nissen",
     "email": "nicholainissen@gmail.com",
     "url": "https://nicholai.dev"
   },
-  "homepage": "",
+  "homepage": "https://streamhue.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/streamhue/streamhue.git"
+  },
   "license": "AGPL-3.0-or-later",
-  "main": "index.js",
+  "module": "src/index.ts",
+  "main": "src/index.ts",
+  "files":[
+    "src/"
+  ],
   "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1"
+    "test": "jest --config ../../jest.config.js --rootDir . --env=node"
+  },
+  "devDependencies": {
+    "@types/mongoose": "^5.7.36",
+    "jest": "^26.4.2",
+    "mongodb-memory-server": "^6.9.0"
+  },
+  "dependencies": {
+    "@types/jsonwebtoken": "^8.5.0",
+    "argon2": "^0.27.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.10.7"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "config": {
+    "mongodbMemoryServer": {
+      "version": "4.2.9"
+    }
   }
 }
