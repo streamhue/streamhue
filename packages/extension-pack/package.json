@@ -1,0 +1,49 @@
+{
+  "name": "extensions",
+  "publisher": "streamhue",
+  "version": "1.1.0",
+  "engines": {
+    "vscode": "^1.49.0"
+  },
+  "description": "A collection of suggested VSCode extension to develop Streamhue with",
+  "keywords": [
+    "extensions",
+    "vscode",
+    "extension",
+    "pack"
+  ],
+  "author": "Nicholai Nissen <nicholainissen@gmail.com>",
+  "homepage": "https://streamhue.com",
+  "license": "AGPL-3.0-or-later",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/streamhue/streamhue.git"
+  },
+  "bugs": {
+    "url": "https://github.com/streamhue/streamhue/issues"
+  },
+  "categories": [
+    "Extension Packs"
+  ],
+  "extensionPack": [
+    "dbaeumer.vscode-eslint",
+    "Orta.vscode-jest",
+    "EditorConfig.EditorConfig",
+    "PKief.material-icon-theme",
+    "shd101wyy.markdown-preview-enhanced",
+    "mikestead.dotenv",
+    "eamodio.gitlens",
+    "octref.vetur",
+    "HookyQR.beautify",
+    "antfu.i18n-ally",
+    "redhat.vscode-yaml",
+    "alexbabichev.formatter-pug",
+    "christian-kohler.npm-intellisense",
+    "christian-kohler.path-intellisense",
+    "CoenraadS.bracket-pair-colorizer-2",
+    "naumovs.color-highlight",
+    "sysoev.language-stylus",
+    "wayou.vscode-todo-highlight",
+    "zamerick.vscode-caddyfile-syntax"
+  ]
+}
