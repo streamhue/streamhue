@@ -8,7 +8,13 @@ Streamhue allows livestreamers on channels such as Twitch, YouTube and others, t
 The project is currently heavily under development and should not be considered usable in any way, shape or form.
 
 ## Getting started
-`npm i` to install
+`npm run bootstrap` to install and bootstrap.
+
+### VS Code
+It is highly recommended you use VS Code and the supplied  workspace file (`streamhue.code-workspace`), together with the *highly* suggested extensions in [our extension pack](https://marketplace.visualstudio.com/items?itemName=streamhue.extensions), for the best possible development experience. (*This extension pack is subject to change, check back to see if there's any new recommendations*)
+
+## Commands
+`npm run reset` to wipe `node_modules` and reinstall everything.
 
 
 ## Packages
