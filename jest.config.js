@@ -3,12 +3,12 @@ module.exports = {
   collectCoverage: true,
   coverageReporters: ["lcov", "json"],
   collectCoverageFrom: [
-      "**/src/**"
+    "**/src/**"
   ],
   transform: {
-     "^.+\\.tsx?$": "ts-jest"
+    "^.+\\.tsx?$": "ts-jest"
   },
-  testRegex: "(/tests/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+  testRegex: "(/tests/.*|(\\.|/)(test|spec))\\.(ts)$", /* (jsx?|tsx?) */
   moduleFileExtensions: [
     "ts",
     "tsx",
