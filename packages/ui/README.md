@@ -1,5 +1,11 @@
 # ui
+**NOTE**: *Vetur currently has two known limitations that you should be aware of:*
 
+It gives a false error on multiple root level elements. \
+Solution: This is not an error in Vue 3 and can *safely* be ignored.
+
+It cannot read config files from non-root level workspaces, which means if you open the files from the root repository, it will break. \
+Solution: Use the supplied `streamhue.code-workspace`.
 ## Project setup
 ```
 npm install
