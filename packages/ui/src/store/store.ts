@@ -6,6 +6,7 @@ export abstract class Store<T extends Object> {
 
   constructor (readonly storeName: string) {
     let data = this.data()
+    this.setup(data)
     this.state = reactive(data) as T
   }
 
