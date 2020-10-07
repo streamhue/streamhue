@@ -48,7 +48,7 @@
     "rimraf": "^3.0.2",
     "ts-jest": "^26.4.1",
     "tsc-watch": "^4.2.9",
-    "typescript": "^4.0.2"
+    "typescript": "~4.0.3"
   },
   "dependencies": {
     "@curveball/accesslog": "^0.2.0",
