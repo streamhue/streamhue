@@ -1,4 +1,4 @@
-# Streamhue
+# 🌈 Streamhue
 [![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lerna.js.org/)
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
@@ -7,34 +7,35 @@
 Streamhue allows livestreamers on channels such as Twitch, YouTube and others, to have interactions with their smartlight systems, to react to donations, subscriptions amongst many other events.\
 The project is currently heavily under development and should not be considered usable in any way, shape or form.
 
-## Getting started
-`npm run bootstrap` to install and bootstrap.
+## ✨ Getting started
+`$ npm run bootstrap` to install and bootstrap. No need to `npm i`. 🥳
 
 ### VS Code
 It is highly recommended you use VS Code and the supplied  workspace file (`streamhue.code-workspace`), together with the *highly* suggested extensions in [our extension pack](https://marketplace.visualstudio.com/items?itemName=streamhue.extensions), for the best possible development experience. (*This extension pack is subject to change, check back to see if there's any new recommendations*)
 
-## Commands
-`npm run reset` to wipe `node_modules` and reinstall everything.
+## 💻 Commands
+`$ npm run reset` to wipe `node_modules` and reinstall everything.
 
+`$ git cz` to make a commit. This will hold your hand. 🤝
 
-## Packages
-### Auth
+## 📦 Packages
+### 🔐 Auth
 Authentication server, used for login.
-### Backend
+### 🤔 Backend
 RESTful API used for registration and configuration storage.
-### Common
+### 📖 Common
 Common components, models and middleware
-### Service
+### 🛎️ Service
 Client background service. Integrates with different streaming providers and smartlight services.
-### UI
+### 📱 UI
 Used to configure user and service.
-### Web
+### 🌍 Web
 General project website
 
-## Contributing
+## ✋ Contributing
 Please see [CONTRIBUTING.md](CONTRIBUTING.md)
 
-## License
+## 📜 License
 ```
 Streamhue and all packages related to it
 Copyright © 2020 Nicholai Nissen
