@@ -15,3 +15,5 @@ class DummyStore extends Store<Dummy> {
     this.state.count++
   }
 }
+
+export const dummyStore = new DummyStore('DUMMY_STORE')
