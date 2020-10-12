@@ -1,7 +1,10 @@
 import { app } from './app'
 import process from 'process'
+import * as dotenv from 'dotenv'
 import { database } from '@streamhue/common'
 import { PackageJson } from '@streamhue/common/types/package-json'
+
+dotenv.config()
 
 /* eslint-disable-next-line @typescript-eslint/no-var-requires */
 const pkg: PackageJson = require('../package.json')

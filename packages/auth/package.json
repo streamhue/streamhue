@@ -23,7 +23,7 @@
   },
   "scripts": {
     "start": "node ./dist/index.js",
-    "dev": "tsnd --respawn --transpile-only src/index.ts -- -r dotenv/config",
+    "dev": "tsnd --respawn --transpile-only src/index.ts",
     "build": "tsc -p tsconfig.json",
     "watch": "tsc --watch",
     "lint": "eslint .",
