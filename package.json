@@ -24,6 +24,7 @@
     "bootstrap": "npm install lerna && lerna bootstrap && npm install",
     "reset": "npm run cleanup && npx rimraf node_modules && npm run bootstrap",
     "test": "lerna run test",
+    "jest": "jest",
     "build": "npm run cleanup && lerna run compile",
     "build:watch": "npm run cleanup && lerna run compile:watch --stream --no-sort",
     "cleanup": "lerna run cleanup --stream --parallel",
