@@ -34,6 +34,7 @@
     "@curveball/cors": "0.0.1",
     "@streamhue/common": "^0.1.0",
     "dotenv": "^8.2.0",
+    "grant": "^5.4.5",
     "jsonwebtoken": "^8.5.1"
   },
   "devDependencies": {
