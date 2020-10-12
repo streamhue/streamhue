@@ -6,6 +6,7 @@ import cors from '@curveball/cors'
 
 import routes from './routes'
 import { jsonOnly } from './middleware/json-only'
+import grant from './middleware/grant'
 
 export const app = new Application()
 
@@ -31,5 +32,8 @@ app.use(cors({
 app.use(jsonOnly())
 
 app.use(bodyParser())
+
+/* OAuth */
+app.use(grant())
 
 app.use(...routes)
