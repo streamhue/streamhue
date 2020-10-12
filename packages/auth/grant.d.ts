@@ -63,9 +63,9 @@ export interface GrantOptionDefaults {
 
   /**
    * transport to use to deliver the response data in your final callback
-   * route querystring | session (defaults to querystring if omitted)
+   * route state | querystring | session (defaults to querystring if omitted)
    */
-  transport?: 'session' | 'querystring'
+  transport?: 'session' | 'querystring' | 'state'
 
   /**
    * generate random state string on each authorization attempt

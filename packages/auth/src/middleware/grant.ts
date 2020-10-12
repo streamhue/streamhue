@@ -6,7 +6,8 @@ function assignDefaults (): GrantOptionDefaults {
   return {
     state: true,
     protocol: isDev ? 'http' : 'https',
-    host: isDev ? 'localhost:3000' : 'auth.streamhue.com'
+    host: isDev ? 'localhost:3000' : 'auth.streamhue.com',
+    transport: 'state'
   }
 }
 
