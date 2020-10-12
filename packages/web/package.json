@@ -1,20 +1,64 @@
 {
   "name": "@streamhue/web",
   "version": "0.1.0",
+  "private": true,
   "description": "Streamhue website",
-  "author": "Nicholai Nissen <nicholainissen@gmail.com>",
-  "homepage": "",
-  "private" : true,
-  "license": "AGPL-3.0-or-later",
-  "main": "lib/web.js",
-  "directories": {
-    "lib": "lib",
-    "test": "__tests__"
+  "author": {
+    "name": "Nicholai Nissen",
+    "email": "nicholainissen@gmail.com"
   },
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "main": "lib/web.js",
   "files": [
     "lib"
   ],
-  "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1"
-  }
+  "dependencies": {
+    "core-js": "^3.6.5",
+    "vue": "^3.0.0",
+    "vue-router": "^4.0.0-0"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.4.0",
+    "@typescript-eslint/parser": "^4.4.0",
+    "@vue/cli-plugin-babel": "~4.5.7",
+    "@vue/cli-plugin-eslint": "~4.5.7",
+    "@vue/cli-plugin-router": "~4.5.7",
+    "@vue/cli-plugin-typescript": "~4.5.7",
+    "@vue/cli-service": "~4.5.7",
+    "@vue/compiler-sfc": "^3.0.0",
+    "@vue/eslint-config-standard": "^5.1.2",
+    "@vue/eslint-config-typescript": "^5.1.0",
+    "eslint": "^7.10.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "eslint-plugin-vue": "^7.0.1",
+    "lint-staged": "^10.4.0",
+    "stylus": "^0.54.8",
+    "stylus-loader": "^3.0.2",
+    "typescript": "~4.0.3"
+  },
+  "_id": "@streamhue/web@0.1.0",
+  "directories": {
+    "lib": "lib",
+    "test": "tests"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "homepage": "",
+  "license": "AGPL-3.0-or-later",
+  "lint-staged": {
+    "*.{js,jsx,vue,ts,tsx}": [
+      "vue-cli-service lint",
+      "git add"
+    ]
+  },
+  "readme": "ERROR: No README data found!"
 }
