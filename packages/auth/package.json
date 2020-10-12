@@ -30,27 +30,16 @@
     "test": "jest --config ../../jest.config.js --rootDir . --env=node"
   },
   "dependencies": {
+    "@curveball/accesslog": "^0.2.0",
+    "@curveball/bodyparser": "^0.4.6",
+    "@curveball/controller": "^0.3.0",
     "@curveball/core": "^0.14.2",
     "@curveball/cors": "0.0.1",
-    "@streamhue/common": "^0.1.0",
+    "@curveball/problem": "^0.2.2",
+    "@curveball/router": "^0.2.4",
+    "@streamhue/common": "file:../common",
     "dotenv": "^8.2.0",
     "grant": "^5.4.5",
     "jsonwebtoken": "^8.5.1"
-  },
-  "devDependencies": {
-    "@types/jsonwebtoken": "^8.5.0",
-    "@typescript-eslint/eslint-plugin": "^4.4.0",
-    "@typescript-eslint/parser": "^4.4.0",
-    "eslint": "^7.10.0",
-    "eslint-config-standard-with-typescript": "^19.0.1",
-    "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-jest": "^24.0.2",
-    "eslint-plugin-jest-formatting": "^2.0.0",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-standard": "^4.0.1",
-    "jest": "^26.4.2",
-    "ts-node-dev": "^1.0.0-pre.63",
-    "typescript": "^4.0.3"
   }
 }
