@@ -1,20 +1,19 @@
 {
   "extends": "../../tsconfig.json",
-
+  "root": true,
   "compilerOptions":{
     "moduleResolution": "node",
     "baseUrl": ".",
     "outDir": "dist",
-    "allowJs": true
+    "strictNullChecks": true
   },
 
   "exclude": [
     "node_modules",
-    "dist",
-    "tests"
+    "dist"
   ],
 
   "include": [
-    "src/**/*"
-]
+    "src/**/*.ts"
+  ]
 }
