@@ -7,7 +7,7 @@
  * https://github.com/guyellis/plant
  */
 
-import { Middleware } from "@curveball/core"
+import { Middleware } from '@curveball/core'
 
 interface GrantResponse {
   /**
@@ -72,6 +72,11 @@ export interface GrantOptionDefaults {
    * true | false (OAuth2 only, defaults to false if omitted)
    */
   state?: boolean
+
+  /**
+   * route path prefix
+   */
+  prefix?: string
 }
 
 interface Provider {
@@ -105,7 +110,7 @@ interface Provider {
   /**
    * specific callback route to use for this provider only /callback | /done ...
    */
-  callback: string
+  callback?: string
 }
 
 interface DefaultOptions {
