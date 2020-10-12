@@ -7,6 +7,8 @@
 Streamhue allows livestreamers on channels such as Twitch, YouTube and others, to have interactions with their smartlight systems, to react to donations, subscriptions amongst many other events.\
 The project is currently heavily under development and should not be considered usable in any way, shape or form.
 
+**NOTE**: Vue 3 (*and its ecosystem*) is still under development, and while we have a major release 3.0 out *(and use it in Streamhue)*, tooling is not complete, so expect **all** frontend packages, and the way you use them, to change. *(ui, web, common➜ components)*
+
 ## ✨ Getting started
 `$ npm run bootstrap` to install and bootstrap. No need to `npm i`. 🥳
 
@@ -19,18 +21,23 @@ It is highly recommended you use VS Code and the supplied  workspace file (`stre
 `$ git cz` to make a commit. This will hold your hand. 🤝
 
 ## 📦 Packages
-### 🔐 Auth
-Authentication server, used for login.
-### 🤔 Backend
-RESTful API used for registration and configuration storage.
-### 📖 Common
-Common components, models and middleware
-### 🛎️ Service
-Client background service. Integrates with different streaming providers and smartlight services.
-### 📱 UI
-Used to configure user and service.
-### 🌍 Web
-General project website
+>### 🔐 Auth
+>Authentication server, used for login.
+
+>### 🤔 Backend
+>RESTful API used for registration and configuration storage.
+
+>### 📖 Common
+>Common components, models and middleware
+
+>### 🛎️ Service
+>Client background service. Integrates with different streaming providers and smartlight services.
+
+>### 📱 UI
+>Used to configure user and service.
+
+>### 🌍 Web
+>General project website
 
 ## ✋ Contributing
 Please see [CONTRIBUTING.md](CONTRIBUTING.md)
