@@ -37,6 +37,7 @@
     "@curveball/cors": "0.0.1",
     "@curveball/problem": "^0.2.2",
     "@curveball/router": "^0.2.4",
+    "@curveball/session": "^0.5.0",
     "@streamhue/common": "file:../common",
     "dotenv": "^8.2.0",
     "grant": "^5.4.5",
