@@ -23,7 +23,7 @@
   },
   "scripts": {
     "start": "node ./dist/index.js",
-    "dev": "tsnd --respawn --transpile-only src/index.ts",
+    "dev": "tsnd --respawn --transpile-only -r dotenv/config src/index.ts",
     "build": "tsc -p tsconfig.json",
     "watch": "tsc --watch",
     "lint": "eslint .",
@@ -39,8 +39,13 @@
     "@curveball/router": "^0.2.4",
     "@curveball/session": "^0.5.0",
     "@streamhue/common": "file:../common",
+    "common-tags": "^1.8.0",
     "dotenv": "^8.2.0",
     "grant": "^5.4.5",
     "jsonwebtoken": "^8.5.1"
+  },
+  "devDependencies": {
+    "@types/common-tags": "^1.8.0",
+    "ts-node-dev": "^1.0.0"
   }
 }
