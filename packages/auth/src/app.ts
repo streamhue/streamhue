@@ -7,6 +7,7 @@ import cors from '@curveball/cors'
 import routes from './routes'
 import { jsonOnly } from './middleware/json-only'
 import grant from './middleware/grant'
+import session from './middleware/session'
 
 export const app = new Application()
 
@@ -16,12 +17,15 @@ export const app = new Application()
 */
 if (process.env.NODE_ENV !== 'test') app.use(accessLog())
 
-/* application/problem+json error response */
+/* Make app respond with application/problem+json error response */
 app.use(problem({
+
   /* Default to true, unless PROBLEM_QUIT is set to false */
   quiet: true && Boolean(process.env.PROBLEM_QUIET ?? true),
+
   /* Default to false, unless PROBLEM_DEBUG is set to true */
   debug: Boolean(process.env.PROBLEM_DEBUG)
+
 }))
 
 app.use(cors({
@@ -34,6 +38,8 @@ app.use(jsonOnly())
 app.use(bodyParser())
 
 /* OAuth */
-app.use(grant())
+app.use(session())
+app.use(grant('login'))
+app.use(grant('connect'))
 
 app.use(...routes)

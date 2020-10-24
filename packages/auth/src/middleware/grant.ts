@@ -1,12 +1,14 @@
 import grant, { GrantOptionDefaults } from 'grant'
 import { commaListsAnd } from 'common-tags'
 
-function assignDefaults (): GrantOptionDefaults {
+type oauthTypes = 'connect' | 'login'
+
+function assignDefaults (type: oauthTypes): GrantOptionDefaults {
   const isDev = process.env.NODE_ENV !== 'production'
 
   return {
     state: true,
-    prefix: '/vendor',
+    prefix: `/vendor/${type}`,
     protocol: isDev ? 'http' : 'https',
     host: isDev ? 'localhost:3000' : 'auth.streamhue.com',
     /* origin: 'http://localhost:3000', */
@@ -14,7 +16,7 @@ function assignDefaults (): GrantOptionDefaults {
   }
 }
 
-export default function () {
+export default function oauth (type: oauthTypes) {
   /* Add all required ENV vars to this array */
   const requiredKeys = ['TWITCH_KEY', 'TWITCH_SECRET']
 
@@ -22,7 +24,7 @@ export default function () {
   if (missingKeys.length > 1) throw new Error(commaListsAnd`Missing keys ${missingKeys}`)
 
   return grant.curveball({
-    defaults: assignDefaults(),
+    defaults: assignDefaults(type),
     /* eslint-disable @typescript-eslint/no-non-null-assertion */
     twitch: {
       key: process.env.TWITCH_KEY!,
