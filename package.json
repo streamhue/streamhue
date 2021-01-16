@@ -58,7 +58,7 @@
     "@curveball/bodyparser": "^0.4.6",
     "@curveball/controller": "^0.3.0",
     "@curveball/core": "^0.14.2",
-    "@curveball/cors": "0.0.1",
+    "@curveball/cors": "0.1.0",
     "@curveball/http-errors": "^0.3.0",
     "@curveball/problem": "^0.2.2",
     "@curveball/router": "^0.2.4"
