@@ -47,7 +47,7 @@
     "husky": "^4.3.0",
     "jest": "^26.4.2",
     "lerna": "^3.22.1",
-    "node-fetch": "^2.6.1",
+    "node-fetch": "^3.2.2",
     "rimraf": "^3.0.2",
     "ts-jest": "^26.4.1",
     "tsc-watch": "^4.2.9",
